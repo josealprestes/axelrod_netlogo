@@ -4,6 +4,34 @@ Implementação didática, em NetLogo, do modelo de **disseminação cultural de
 
 O objetivo deste repositório é oferecer uma versão simples, inspecionável e pedagogicamente útil do modelo, preservando as hipóteses centrais do modo “textbook”: vizinhança de von Neumann, malha sem tórus, um agente por patch e probabilidade de interação proporcional à similaridade cultural.
 
+## Status da v2
+
+A v2 transforma o repositório em um pequeno pacote didático-reprodutível de modelagem baseada em agentes. Ela adiciona metadados de citação, documentação conceitual, guia de experimentos, scaffold de análise e protocolo para BehaviorSpace.
+
+O arquivo `.nlogo` canônico não foi alterado nesta rodada. As extensões de código do modelo foram separadas em um checklist técnico para evitar mudanças não testadas na regra original de Axelrod.
+
+## Estrutura do repositório
+
+```text
+.
+├── README.md
+├── CITATION.cff
+├── CHANGELOG.md
+├── docs/
+│   ├── model-explanation.md
+│   ├── experiments.md
+│   └── v2-model-extension-checklist.md
+├── experiments/
+│   ├── behaviorspace/
+│   │   └── README.md
+│   └── sample-results/
+│       └── schema.csv
+└── analysis/
+    ├── README.md
+    ├── requirements.txt
+    └── summarize_behaviorspace.py
+```
+
 ## Ideia central
 
 O modelo representa agentes distribuídos em uma grade. Cada agente possui um vetor cultural composto por **F características**; cada característica pode assumir um entre **Q traços** possíveis.
@@ -67,6 +95,32 @@ As principais métricas implementadas são:
 
 A identificação das regiões utiliza busca em largura (BFS) para rotular componentes conectados.
 
+## Experimentos reprodutíveis
+
+A v2 inclui um guia para experimentos com BehaviorSpace:
+
+- `docs/experiments.md`
+- `experiments/behaviorspace/README.md`
+- `experiments/sample-results/schema.csv`
+
+Um sweep mínimo recomendado compara os efeitos de `F` e `Q` sobre consenso, fragmentação e tempo até absorção.
+
+## Análise dos resultados
+
+A pasta `analysis/` contém um scaffold simples para análise de CSVs exportados pelo BehaviorSpace.
+
+Instale a dependência mínima:
+
+```bash
+pip install -r analysis/requirements.txt
+```
+
+Rode o sumário:
+
+```bash
+python analysis/summarize_behaviorspace.py experiments/sample-results/results.csv
+```
+
 ## Uso didático
 
 Este repositório pode ser usado para:
@@ -90,12 +144,18 @@ Possíveis extensões futuras incluem:
 - comparação sistemática entre regimes de `F`, `Q` e tamanho do mundo;
 - exportação automática de resultados para análise estatística externa.
 
+Para alterações no arquivo `.nlogo`, consulte `docs/v2-model-extension-checklist.md`.
+
 ## Solução de problemas
 
 - Se aparecer aviso sobre tórus, desligue o wrap nas configurações do mundo.
 - Se os plots não forem atualizados, verifique se os nomes dos monitores e plots coincidem com os usados no código.
 - Se a execução estiver lenta, aumente os intervalos de redesenho e recomputação de métricas ou reduza o tamanho do mundo.
 - Se o modelo estabilizar rapidamente, teste valores maiores de `Q` ou um mundo maior.
+
+## Como citar
+
+Consulte `CITATION.cff` para metadados de citação do software.
 
 ## Referência
 

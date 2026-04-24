@@ -1,0 +1,2 @@
+run_id,seed,world_width,world_height,F,Q,interaction_prob,ticks_until_absorption,final_cultural_regions,final_mean_region_size,largest_region_size,largest_region_share,effective_interactions,absorbed
+example,1,61,61,5,15,1.0,,,,,,,

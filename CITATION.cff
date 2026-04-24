@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+title: "Axelrod – Disseminação Cultural em NetLogo"
+message: "If you use this model or repository, please cite it as software."
+type: software
+
+authors:
+  - family-names: "de Lima Prestes"
+    given-names: "José Augusto"
+    orcid: "https://orcid.org/0000-0001-8686-5360"
+
+repository-code: "https://github.com/josealprestes/axelrod_netlogo"
+url: "https://github.com/josealprestes/axelrod_netlogo"
+license: "MIT"
+version: "2.0.0"
+date-released: "2026-04-24"
+
+abstract: >
+  Didactic NetLogo implementation of Axelrod's cultural dissemination model,
+  with textbook-mode assumptions, documentation for agent-based modeling
+  education, reproducibility guidance, parameter-sweep templates, and analysis
+  scaffolding for inspecting consensus and fragmentation dynamics.
+
+keywords:
+  - agent-based modeling
+  - NetLogo
+  - Axelrod
+  - cultural dissemination
+  - social simulation
+  - complexity
+  - computational social science
+  - education
+  - reproducibility
+
+preferred-citation:
+  type: software
+  authors:
+    - family-names: "de Lima Prestes"
+      given-names: "José Augusto"
+  title: "Axelrod – Disseminação Cultural em NetLogo"
+  version: "2.0.0"
+  date-released: "2026-04-24"
+  url: "https://github.com/josealprestes/axelrod_netlogo"

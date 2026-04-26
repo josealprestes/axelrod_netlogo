@@ -58,7 +58,7 @@ A dinâmica é baseada em homofilia e influência social:
 
 ## Como Rodar
 
-1. Instale o **NetLogo 6.x**.
+1. Instale o **NetLogo 6.4.0** (ou versão 6.x compatível).
 2. Abra o arquivo `axelrod_cultural_diffusion_model.nlogo`.
 3. Nas configurações do mundo, use uma malha **61 × 61** e desligue o tórus.
 4. Configure os parâmetros sugeridos: `F = 5`, `Q = 15`.

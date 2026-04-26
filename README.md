@@ -1,5 +1,8 @@
 # Axelrod – Disseminação Cultural em NetLogo
 
+> [!CAUTION]
+> **PROJETO CONGELADO:** Este repositório encontra-se em estado de manutenção/congelamento. Não há planos para novas implementações no curto prazo, servindo como base estável para estudos e referências futuras.
+
 Implementação didática, em NetLogo, do modelo de **disseminação cultural de Axelrod (1997)**, conforme o capítulo *“Disseminating Culture”* de *The Complexity of Cooperation*.
 
 O objetivo deste repositório é oferecer uma versão simples, inspecionável e pedagogicamente útil do modelo, preservando as hipóteses centrais do modo “textbook”: vizinhança de von Neumann, malha sem tórus, um agente por patch e probabilidade de interação proporcional à similaridade cultural.
